@@ -1,7 +1,7 @@
-for_data_publication
+For data publication with UA Library Data Repo
 ==============================
 
-TThis project contains source code, other related documents, and small, derived datasets for the NSF-funded GenoPhenoEnvo project. This repo supports one of our goals to provide open data and reproducible code in order to follow FAIR data principles and contribute to open science.
+This project contains source code, other related files, and small, derived datasets for the NSF-funded [GenoPhenoEnvo](https://github.com/genophenoenvo) project. This repo supports one of our goals to provide open data and reproducible code in order to follow [FAIR](https://www.go-fair.org/fair-principles/) data principles and contribute to open science.
 
 Project Organization
 ------------
