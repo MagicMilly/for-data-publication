@@ -3,6 +3,10 @@ For data publication with UA Library Data Repo
 
 This project contains source code, other related files, and small, derived datasets for the NSF-funded [GenoPhenoEnvo](https://github.com/genophenoenvo) project. This repo supports one of our goals to provide open data and reproducible code in order to follow [FAIR](https://www.go-fair.org/fair-principles/) data principles and contribute to open science.
 
+### Raw Data
+The raw input data queried from betydb live on [CyVerse](https://cyverse.org/). All links will start an **automatic download** of the selected dataset. 
+- Clemson 2014 trait [data](https://de.cyverse.org/dl/d/E5B8AC50-B1D1-4254-932D-F04CA0D1DF3E/clemson_data_2020-06-01.csv)
+
 Project Organization
 ------------
 
