@@ -8,7 +8,9 @@ The raw input data queried from betydb live on [CyVerse](https://cyverse.org/). 
 - Clemson 2014 trait [data](https://de.cyverse.org/dl/d/E5B8AC50-B1D1-4254-932D-F04CA0D1DF3E/clemson_data_2020-06-01.csv)
 - Clemson 2014 weather [data](https://de.cyverse.org/dl/d/B6FF28EF-ACA0-4CA7-89EA-30F624003607/clemson_weather_daily_2014.csv) from Florence Regional Airport, SC. 
 - Maricopa Agricultural Center (MAC) Season 4 trait [data](https://de.cyverse.org/dl/d/D3168AC5-82BE-436E-B8B5-AB8DD78CAF28/mac_season_four_2020-04-22.csv)
-- MAC Weather Station daily [values](https://de.cyverse.org/dl/d/6FAC2D4E-BD63-4801-95BB-C4FD4031104A/mac_weather_station_raw_daily_2017.csv) for 2017
+- MAC Weather Station daily [values](https://de.cyverse.org/dl/d/6FAC2D4E-BD63-4801-95BB-C4FD4031104A/mac_weather_station_raw_daily_2017.csv) for 2017 (Season 4)
+- MAC Season 6 trait [data](https://de.cyverse.org/dl/d/C14BF1DE-9FD3-4559-AC3E-7858CE392E3A/mac_season_six_2020-04-22.csv)
+- MAC Weather Station daily [values](https://de.cyverse.org/dl/d/8A15BCF5-6A57-412B-AE46-22DE18CE730C/mac_weather_station_raw_daily_2018.csv) for 2018 (Season 6)
 
 Project Organization
 ------------
