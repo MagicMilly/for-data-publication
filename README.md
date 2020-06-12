@@ -3,14 +3,206 @@ For data publication with UA Library Data Repo
 
 This project contains source code, other related files, and small, derived datasets for the NSF-funded [GenoPhenoEnvo](https://github.com/genophenoenvo) project. This repo supports one of our goals to provide open data and reproducible code in order to follow [FAIR](https://www.go-fair.org/fair-principles/) data principles and contribute to open science.
 
-### Raw Data
+## Raw Data
 The raw input data queried from betydb live on [CyVerse](https://cyverse.org/). All links will start an **automatic download** of the selected dataset. 
-- Clemson 2014 trait [data](https://de.cyverse.org/dl/d/E5B8AC50-B1D1-4254-932D-F04CA0D1DF3E/clemson_data_2020-06-01.csv)
-- Clemson 2014 weather [data](https://de.cyverse.org/dl/d/B6FF28EF-ACA0-4CA7-89EA-30F624003607/clemson_weather_daily_2014.csv) from Florence Regional Airport, SC. 
 - Maricopa Agricultural Center (MAC) Season 4 trait [data](https://de.cyverse.org/dl/d/D3168AC5-82BE-436E-B8B5-AB8DD78CAF28/mac_season_four_2020-04-22.csv)
 - MAC Weather Station daily [values](https://de.cyverse.org/dl/d/6FAC2D4E-BD63-4801-95BB-C4FD4031104A/mac_weather_station_raw_daily_2017.csv) for 2017 (Season 4)
 - MAC Season 6 trait [data](https://de.cyverse.org/dl/d/C14BF1DE-9FD3-4559-AC3E-7858CE392E3A/mac_season_six_2020-04-22.csv)
 - MAC Weather Station daily [values](https://de.cyverse.org/dl/d/8A15BCF5-6A57-412B-AE46-22DE18CE730C/mac_weather_station_raw_daily_2018.csv) for 2018 (Season 6)
+- Clemson 2014 trait [data](https://de.cyverse.org/dl/d/E5B8AC50-B1D1-4254-932D-F04CA0D1DF3E/clemson_data_2020-06-01.csv)
+- Clemson 2014 weather [data](https://de.cyverse.org/dl/d/B6FF28EF-ACA0-4CA7-89EA-30F624003607/clemson_weather_daily_2014.csv) from Florence Regional Airport, SC. 
+
+## Metadata
+
+#### Licensing
+
+Data and other documents are licensed under CC-By. All software is licensed under MIT.
+
+### Folder and File Structures
+
+#### data/
+- raw/
+    - data downloaded from betydb and MAC weather station and used for transformation and curation
+- interim/
+    - cleaned and formatted environmental data that were used to process final data products
+- processed/
+    - final curated data products
+
+#### data/raw
+Used for input data
+
+- mac_season_four: Non-null columns include 
+	- result type
+	- id
+	- citation id
+	- site id
+	- treatment id
+	- sitename
+	- city
+	- latitude
+	- longitude
+	- scientific name
+	- common name
+	- genus
+	- species id
+	- cultivar id
+	- author
+	- citation year
+	- treatment
+	- date (AZ)
+	- time
+	- raw date (UTC)
+	- month
+	- year
+	- dateloc
+	- trait
+	- trait description
+	- mean (value of particular trait)
+	- units
+	- notes
+	- access level
+	- cultivar
+	- entity
+	- method name
+	- view url
+	- edit url
+
+- mac_weather_station_raw_daily_2017 (season 4): Columns include 
+	- year
+	- day of year
+	- station number
+	- daily min, max, and average values for 
+		- air temperature in Celsius
+		- relative humidity (rh)
+		- 4 inch soil temperature in Celsius
+		- 20 inch soil temperature in Celsius
+	- average values for 
+		- vapor pressure deficit (vpd)
+		- wind speed
+		- vapor pressure
+		- dew point 
+	- solar radiation total
+	- precipitation total
+	- wind vector magnitude
+	- wind vector direction
+	- wind direction standard deviation (wind_direction_std)
+	- max wind speed
+	- heat units
+	- original AZMET evapotranspiration (eto_azmet)
+	- Penman-Monteith evapotranspiration (eto_pm)
+    
+- mac_season_six: Non-null columns include 
+	- result type
+	- id
+	- citation id
+	- site id
+	- treatment id
+	- sitename
+	- city
+	- latitude
+	- longitude
+	- scientific name
+	- common name
+	- genus
+	- species id
+	- cultivar id
+	- author
+	- citation year
+	- treatment
+	- date (AZ)
+	- time
+	- raw date (UTC)
+	- month
+	- year
+	- dateloc
+	- trait
+	- trait description
+	- mean (value of particular trait)
+	- units
+	- notes
+	- access level
+	- cultivar
+	- entity
+	- method name
+	- view url
+	- edit url
+
+- mac_weather_station_raw_daily_2018: Columns include 
+	- year
+	- day of year
+	- station number
+	- daily min, max, and average values for 
+		- air temperature in Celsius
+		- relative humidity (rh)
+		- 4 inch soil temperature in Celsius
+		- 20 inch soil temperature in Celsius
+	- average values for 
+		- vapor pressure deficit (vpd)
+		- wind speed
+		- vapor pressure
+		- dew point 
+	- solar radiation total
+	- precipitation total
+	- wind vector magnitude
+	- wind vector direction
+	- wind direction standard deviation (wind_direction_std)
+	- max wind speed
+	- heat units
+	- original AZMET evapotranspiration (eto_azmet)
+	- Penman-Monteith evapotranspiration (eto_pm)
+    
+#### data/processed/
+
+- aboveground_dry_biomass_season_4: Columns include 
+    - date
+	- sitename (plot name within the field with range and column values)
+	- range (to help determine location within the field)
+	- column (to help determine location within the field)
+	- latitude
+	- longitude
+	- treatment
+	- cultivar
+	- aboveground dry biomass values
+	- units (kg / ha)
+
+- canopy_heights_season_4: Columns include
+    - date
+	- sitename (plot name within the field with range and column values)
+	- range (to help determine location within the field)
+	- column (to help determine location within the field)
+	- latitude
+	- longitude
+	- treatment
+	- method name
+	- cultivar
+	- canopy height cm
+
+- days_gdd_to_flag_leaf_emergence_season_4: Columns include 
+	- sitename (plot name within the field with range and column values)
+	- range (to help determine location within the field)
+	- column (to help determine location within the field)
+	- latitude
+	- longitude
+	- treatment
+	- trait description
+	- cultivar
+	- days _to_ flag leaf emergence 
+	- date _of_ flag leaf emergence
+	- growing degree days (gdd) to flag leaf emergence
+
+- days_gdd_to_flowering_season_4: Columns include 
+	- sitename (plot name within the field with range and column values)
+	- range (to help determine location within the field)
+	- column (to help determine location within the field)
+	- latitude
+	- longitude
+	- treatment
+	- trait description
+	- cultivar
+	- days _to_ flowering
+	- date _of_ flowering
+	- growing degree days (gdd) to flowering
+
 
 Project Organization
 ------------
