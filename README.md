@@ -4,9 +4,9 @@ For data publication with UA Library Data Repo
 This project contains source code, other related files, and small, derived datasets for the NSF-funded [GenoPhenoEnvo](https://github.com/genophenoenvo) project. This repo supports one of our goals to provide open data and reproducible code in order to follow [FAIR](https://www.go-fair.org/fair-principles/) data principles and contribute to open science.
 
 ### Raw Data
-The raw input trait data queried from betydb live on [CyVerse](https://cyverse.org/), in addition to environmental data downloaded from wether stations. All links will start an **automatic download** from CyVerse of the selected dataset. 
+The raw input trait data queried from betydb live on [CyVerse](https://cyverse.org/), in addition to environmental data downloaded from weather stations. All links will start an **automatic download** from CyVerse of the selected dataset. 
 - Clemson 2014 trait [data](https://de.cyverse.org/dl/d/E5B8AC50-B1D1-4254-932D-F04CA0D1DF3E/clemson_data_2020-06-01.csv)
-- Clemson 2014 weather [data](https://de.cyverse.org/dl/d/B6FF28EF-ACA0-4CA7-89EA-30F624003607/clemson_weather_daily_2014.csv) from Florence Regional Airport, SC. 
+- Clemson 2014 weather [data](https://de.cyverse.org/dl/d/B6FF28EF-ACA0-4CA7-89EA-30F624003607/clemson_weather_daily_2014.csv) from Florence Regional Airport, SC 
 - Maricopa Agricultural Center (MAC) Season 4 trait [data](https://de.cyverse.org/dl/d/D3168AC5-82BE-436E-B8B5-AB8DD78CAF28/mac_season_four_2020-04-22.csv)
 - MAC Weather Station daily [values](https://de.cyverse.org/dl/d/6FAC2D4E-BD63-4801-95BB-C4FD4031104A/mac_weather_station_raw_daily_2017.csv) for 2017 (Season 4)
 - MAC Season 6 trait [data](https://de.cyverse.org/dl/d/C14BF1DE-9FD3-4559-AC3E-7858CE392E3A/mac_season_six_2020-04-22.csv)
@@ -16,11 +16,11 @@ The raw input trait data queried from betydb live on [CyVerse](https://cyverse.o
 To download raw weather data from the original source:
 - Maricopa Agricultural Center [Weather Station](https://cals.arizona.edu/azmet/06.htm)
 - Manhattan Weather [Data](https://mesonet.k-state.edu/weather/historical/) (for KSU Ashland Bottoms Experiment)
-- Brenton et al. 2016 Clemson Weather [Data](https://www.ncdc.noaa.gov/cdo-web/datasets#GHCND) - collected from Florence, SC Regional Airport. This NOAA climate data must be requested, and 
+- Brenton et al. 2016 Clemson Weather [Data](https://www.ncdc.noaa.gov/cdo-web/datasets#GHCND) - collected from Florence, SC Regional Airport. Note: this NOAA climate data must be requested from the site, which is then sent to the provided e-mail address once processed. 
 
 ### Metadata
 
-**Licenses**
+#### Licenses
 Data and other documents are licensed under CC-By. All software is licensed under MIT.
 
 ### Folder and File Structures
