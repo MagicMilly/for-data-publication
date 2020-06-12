@@ -3,32 +3,37 @@ For data publication with UA Library Data Repo
 
 This project contains source code, other related files, and small, derived datasets for the NSF-funded [GenoPhenoEnvo](https://github.com/genophenoenvo) project. This repo supports one of our goals to provide open data and reproducible code in order to follow [FAIR](https://www.go-fair.org/fair-principles/) data principles and contribute to open science.
 
-## Raw Data
-The raw input data queried from betydb live on [CyVerse](https://cyverse.org/). All links will start an **automatic download** of the selected dataset. 
+### Raw Data
+The raw input trait data queried from betydb live on [CyVerse](https://cyverse.org/), in addition to environmental data downloaded from weather stations. All links will start an **automatic download** from CyVerse of the selected dataset. 
+- Clemson 2014 trait [data](https://de.cyverse.org/dl/d/E5B8AC50-B1D1-4254-932D-F04CA0D1DF3E/clemson_data_2020-06-01.csv)
+- Clemson 2014 weather [data](https://de.cyverse.org/dl/d/B6FF28EF-ACA0-4CA7-89EA-30F624003607/clemson_weather_daily_2014.csv) from Florence Regional Airport, SC 
 - Maricopa Agricultural Center (MAC) Season 4 trait [data](https://de.cyverse.org/dl/d/D3168AC5-82BE-436E-B8B5-AB8DD78CAF28/mac_season_four_2020-04-22.csv)
 - MAC Weather Station daily [values](https://de.cyverse.org/dl/d/6FAC2D4E-BD63-4801-95BB-C4FD4031104A/mac_weather_station_raw_daily_2017.csv) for 2017 (Season 4)
 - MAC Season 6 trait [data](https://de.cyverse.org/dl/d/C14BF1DE-9FD3-4559-AC3E-7858CE392E3A/mac_season_six_2020-04-22.csv)
 - MAC Weather Station daily [values](https://de.cyverse.org/dl/d/8A15BCF5-6A57-412B-AE46-22DE18CE730C/mac_weather_station_raw_daily_2018.csv) for 2018 (Season 6)
-- Clemson 2014 trait [data](https://de.cyverse.org/dl/d/E5B8AC50-B1D1-4254-932D-F04CA0D1DF3E/clemson_data_2020-06-01.csv)
-- Clemson 2014 weather [data](https://de.cyverse.org/dl/d/B6FF28EF-ACA0-4CA7-89EA-30F624003607/clemson_weather_daily_2014.csv) from Florence Regional Airport, SC. 
 
-## Metadata
+#### Environmental Data
+To download raw weather data from the original source:
+- Maricopa Agricultural Center [Weather Station](https://cals.arizona.edu/azmet/06.htm)
+- Manhattan Weather [Data](https://mesonet.k-state.edu/weather/historical/) (for KSU Ashland Bottoms Experiment)
+- Brenton et al. 2016 Clemson Weather [Data](https://www.ncdc.noaa.gov/cdo-web/datasets#GHCND) - collected from Florence, SC Regional Airport. Note: this NOAA climate data must be requested from the site, which is then sent to the provided e-mail address once processed. 
 
-#### Licensing
+### Metadata
 
+#### Licenses
 Data and other documents are licensed under CC-By. All software is licensed under MIT.
 
 ### Folder and File Structures
 
 #### data/
 - raw/
-    - data downloaded from betydb and MAC weather station and used for transformation and curation
+ - data downloaded from betydb and MAC weather station and used for transformation and curation
 - interim/
-    - cleaned and formatted environmental data that were used to process final data products
+ - cleaned and formatted environmental data that were used to process final data products
 - processed/
-    - final curated data products
+ - final curated data products
 
-#### data/raw
+#### data/raw/
 Used for input data
 
 - mac_season_four: Non-null columns include 
@@ -151,57 +156,12 @@ Used for input data
 	- original AZMET evapotranspiration (eto_azmet)
 	- Penman-Monteith evapotranspiration (eto_pm)
     
-#### data/processed/
 
-- aboveground_dry_biomass_season_4: Columns include 
-    - date
-	- sitename (plot name within the field with range and column values)
-	- range (to help determine location within the field)
-	- column (to help determine location within the field)
-	- latitude
-	- longitude
-	- treatment
-	- cultivar
-	- aboveground dry biomass values
-	- units (kg / ha)
 
-- canopy_heights_season_4: Columns include
-    - date
-	- sitename (plot name within the field with range and column values)
-	- range (to help determine location within the field)
-	- column (to help determine location within the field)
-	- latitude
-	- longitude
-	- treatment
-	- method name
-	- cultivar
-	- canopy height cm
 
-- days_gdd_to_flag_leaf_emergence_season_4: Columns include 
-	- sitename (plot name within the field with range and column values)
-	- range (to help determine location within the field)
-	- column (to help determine location within the field)
-	- latitude
-	- longitude
-	- treatment
-	- trait description
-	- cultivar
-	- days _to_ flag leaf emergence 
-	- date _of_ flag leaf emergence
-	- growing degree days (gdd) to flag leaf emergence
 
-- days_gdd_to_flowering_season_4: Columns include 
-	- sitename (plot name within the field with range and column values)
-	- range (to help determine location within the field)
-	- column (to help determine location within the field)
-	- latitude
-	- longitude
-	- treatment
-	- trait description
-	- cultivar
-	- days _to_ flowering
-	- date _of_ flowering
-	- growing degree days (gdd) to flowering
+
+
 
 
 Project Organization
