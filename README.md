@@ -11,11 +11,13 @@ The raw input trait data queried from betydb live on [CyVerse](https://cyverse.o
 - MAC Weather Station daily [values](https://de.cyverse.org/dl/d/6FAC2D4E-BD63-4801-95BB-C4FD4031104A/mac_weather_station_raw_daily_2017.csv) for 2017 (Season 4)
 - MAC Season 6 trait [data](https://de.cyverse.org/dl/d/C14BF1DE-9FD3-4559-AC3E-7858CE392E3A/mac_season_six_2020-04-22.csv)
 - MAC Weather Station daily [values](https://de.cyverse.org/dl/d/8A15BCF5-6A57-412B-AE46-22DE18CE730C/mac_weather_station_raw_daily_2018.csv) for 2018 (Season 6)
+- KSU Ashland Bottoms Season 6 trait [Data](https://de.cyverse.org/dl/d/018B11DA-28E7-46B8-88D9-4481904FFBA7/ksu_data_2020-06-11.csv) (2016)
+- KSU Ashland Bottoms Daily Weather [data](https://de.cyverse.org/dl/d/00A6136E-D123-4356-84A5-552FB09A56EB/ashland_bottoms_daily_weather_2016.csv) for 2016
 
 #### Environmental Data
 To download raw weather data from the original source:
 - Maricopa Agricultural Center [Weather Station](https://cals.arizona.edu/azmet/06.htm)
-- Manhattan Weather [Data](https://mesonet.k-state.edu/weather/historical/) (for KSU Ashland Bottoms Experiment)
+- Ashland Bottoms Weather Station [Data](https://mesonet.k-state.edu/weather/historical/) (for KSU Ashland Bottoms Season 6 Experiment)
 - Brenton et al. 2016 Clemson Weather [Data](https://www.ncdc.noaa.gov/cdo-web/datasets#GHCND) - collected from Florence, SC Regional Airport. Note: this NOAA climate data must be requested from the site, which is then sent to the provided e-mail address once processed. 
 
 ### Metadata
