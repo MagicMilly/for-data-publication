@@ -32,11 +32,11 @@ Data and other documents are licensed under CC-By. All software is licensed unde
 
 #### data/
 - raw/
- - data downloaded from betydb and MAC weather station and used for transformation and curation
+  - data downloaded from betydb and MAC weather station and used for transformation and curation
 - interim/
- - cleaned and formatted environmental data that were used to process final data products
+  - cleaned and formatted environmental data that were used to process final data products
 - processed/
- - final curated data products
+  - final curated data products
 
 #### data/raw/
 
