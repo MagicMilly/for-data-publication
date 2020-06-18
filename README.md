@@ -39,7 +39,25 @@ Data and other documents are licensed under CC-By. All software is licensed unde
  - final curated data products
 
 #### data/raw/
-Used for input data
+
+The raw input trait data used in the notebooks were queried from betydb and live in [CyVerse](https://cyverse.org/), in addition to environmental data downloaded from weather stations. All links will start an **automatic download** from CyVerse of the selected dataset.
+
+- Clemson 2014 trait [data](https://de.cyverse.org/dl/d/E5B8AC50-B1D1-4254-932D-F04CA0D1DF3E/clemson_data_2020-06-01.csv)
+- Clemson 2014 weather [data](https://de.cyverse.org/dl/d/B6FF28EF-ACA0-4CA7-89EA-30F624003607/clemson_weather_daily_2014.csv) from Florence Regional Airport, SC - these data will be updated to reflect a location closer to the Pee Dee Research Center with additional environmental variables
+- Maricopa Agricultural Center (MAC) Season 4 trait [data](https://de.cyverse.org/dl/d/D3168AC5-82BE-436E-B8B5-AB8DD78CAF28/mac_season_four_2020-04-22.csv)
+- MAC Weather Station daily [values](https://de.cyverse.org/dl/d/6FAC2D4E-BD63-4801-95BB-C4FD4031104A/mac_weather_station_raw_daily_2017.csv) for 2017 (Season 4)
+- MAC Season 6 trait [data](https://de.cyverse.org/dl/d/C14BF1DE-9FD3-4559-AC3E-7858CE392E3A/mac_season_six_2020-04-22.csv)
+- MAC Weather Station daily [values](https://de.cyverse.org/dl/d/8A15BCF5-6A57-412B-AE46-22DE18CE730C/mac_weather_station_raw_daily_2018.csv) for 2018 (Season 6)
+- KSU Ashland Bottoms Season 6 trait [Data](https://de.cyverse.org/dl/d/018B11DA-28E7-46B8-88D9-4481904FFBA7/ksu_data_2020-06-11.csv) (2016)
+- KSU Ashland Bottoms Daily Weather [data](https://de.cyverse.org/dl/d/7DDD1490-C380-4512-96E9-FE7E24251506/ashland_bottoms_daily_weather_2016.csv) for 2016
+
+#### Environmental Data
+To download raw weather data from the original source:
+- Maricopa Agricultural Center [Weather Station](https://cals.arizona.edu/azmet/06.htm)
+- Ashland Bottoms Weather Station [Data](https://mesonet.k-state.edu/weather/historical/) (for KSU Ashland Bottoms Season 6 Experiment)
+- Brenton et al. 2016 Clemson Weather [Data](https://www.ncdc.noaa.gov/cdo-web/datasets#GHCND) (_which will be updated, using a different source_) - collected from Florence, SC Regional Airport. Note: this NOAA climate data must be requested from the site, which is then sent to the provided e-mail address once processed. 
+
+#### Description of raw data files
 
 - mac_season_four: Non-null columns include 
 	- result type
@@ -67,7 +85,7 @@ Used for input data
 	- dateloc
 	- trait
 	- trait description
-	- mean (value of particular trait)
+	- mean (value of particular trait, not an average)
 	- units
 	- notes
 	- access level
@@ -127,7 +145,7 @@ Used for input data
 	- dateloc
 	- trait
 	- trait description
-	- mean (value of particular trait)
+	- mean (value of particular trait, not an average)
 	- units
 	- notes
 	- access level
@@ -160,6 +178,92 @@ Used for input data
 	- heat units
 	- original AZMET evapotranspiration (eto_azmet)
 	- Penman-Monteith evapotranspiration (eto_pm)
+
+- ksu_data: Non-null columns include
+    - result type
+    - id
+    - citation id
+    - site id
+    - treatment id
+    - sitename
+    - city
+    - latitude
+    - longitude
+    - scientific name
+    - common name
+    - genus
+    - species id
+    - cultivar id
+    - author
+    - citation year
+    - treatment
+    - date
+    - time
+    - raw date
+    - month
+    - year
+    - dateloc
+    - trait
+    - trait description
+    - mean (value for that particular trait, not an average)
+    - units (measurements used for the "mean" value in the previous column)
+    - notes
+    - access level
+    - cultivar
+    - method name
+    - view url
+    - edit url
+
+- ashland_bottoms_daily_weather_2016 (for ksu data): Columns for daily values include
+    - timestamp
+    - station
+    - air temperature max - Celsius
+    - air temperature min - Celsius
+    - average relative humidity - percentage
+    - precipitation - mm
+    - average wind speed - m/s
+    - max wind speed - m/s
+    - max soil temperature at 5 cm - Celsius
+    - min soil temperature at 5 cm - Celsius
+    - max soil temperature at 10 cm - Celsius
+    - min soil temperature at 10 cm - Celsius
+    - total solar radiation - MJ/m²
+    - evapotranspiration for grass - mm
+    - evapotranspiration for alfalfa - mm
+
+- clemson_data: Non-null columns include
+    - result type
+    - id
+    - citation id
+    - site id
+    - treatment id
+    - sitename
+    - city
+    - latitude
+    - longitude
+    - scientific name
+    - common name
+    - genus
+    - species id
+    - cultivar id
+    - author
+    - citation year
+    - treatment
+    - date (UTC)
+    - raw date
+    - month
+    - year
+    - dateloc
+    - trait
+    - trait description
+    - mean (value for a particular trait, not an average)
+    - units (for the "mean" value in the previous column)
+    - access level
+    - cultivar
+    - view url
+    - edit url
+
+- clemson_weather_daily_2014 - these data will be replaced and updated
     
 
 
