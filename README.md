@@ -264,6 +264,66 @@ To download raw weather data from the original source:
     - edit url
 
 - clemson_weather_daily_2014 - these data will be replaced and updated
+
+#### data/processed/
+This section includes descriptions of how raw data were transformed and the resulting data products. One common change to the raw data includes dropping columns that only contain a single value (i.e., author, redundant date columns). Currently, the traits we are focused on for a machine learning model include aboveground dry biomass, days to flowering, days to flag leaf emergence, and canopy height. 
+
+- aboveground_dry_biomass_mac_season_4
+    - Null columns dropped
+        - n
+        - statname
+        - stat
+    - Columns dropped with only one value
+        - result type: `trait`
+        - city: `Maricopa`
+        - scientific name: `Sorghum bicolor`
+        - common name: `sorghum`
+        - genus: `Sorghum`
+        - species id: `2588`
+        - year: `2017`
+        - dateloc: `5.`
+    - Columns dropped due to having a small number of unique values
+        - citation id: `6000000008`, `6000000016`, `6000000011`
+        - treatment id: `6000000024`, `6000000026`
+        - author: `Zongyang, Li`, `Zeyu Zhang`, `Newcomb, Maria`
+        - citation year: `2016`, `2017`, `2019`
+        - access level (to the data, before publication): `2`, `4`
+    - Columns dropped which are currently not relevant to analysis and / or redundant:
+        - Unnamed: 0
+        - checked
+        - id
+        - site id
+        - cultivar id
+        - time
+        - raw date
+        - month
+        - notes
+        - entity
+        - view url
+        - edit url
+    - Columns which were kept and/or modified
+        - date: converted from string to datetime object
+        - sitename: indicates the location of the plant within the field
+        - range: location identifier also found in the sitename
+        - column: location identifier also found in the sitename
+        - lat
+        - lon
+        - treatment: indicates date ranges for water-deficit stress
+        - cultivar
+        - aboveground dry biomass: this column contains the values
+        - units: kg/ha
+- aboveground_dry_biomass_season_6
+- canopy_height_season_6
+- canopy_height_season_4
+- clemson_aboveground_dry_biomass
+- clemson_canopy_heights
+- clemson_days_to_flowering
+- cultivar_lookup_table
+- days_gdd_to_flag_leaf_emergence_season_4
+- days_gdd_to_flowering_season_4
+- ksu_canopy_heights
+- ksu_flowering
+
     
 
 
