@@ -4,7 +4,12 @@ For data publication with UA Library Data Repo
 This project contains source code, other related files, and small, derived datasets for the NSF-funded [GenoPhenoEnvo](https://github.com/genophenoenvo) project. This repo supports one of our goals to provide open data and reproducible code in order to follow [FAIR](https://www.go-fair.org/fair-principles/) data principles and contribute to open science.
 
 ### Getting Started
-The scripts and instructions for accessing data on betydb can be found in [David LeBauer's](https://github.com/dlebauer) Google [drive](https://drive.google.com/drive/folders/1uiHKZDTeYERBkyqHEuzrptCB7Wz0sp5w?usp=sharing) for his data publication. 
+The scripts and instructions for accessing data on betydb can be found in [David LeBauer's](https://github.com/dlebauer) Google [drive](https://drive.google.com/drive/folders/1uiHKZDTeYERBkyqHEuzrptCB7Wz0sp5w?usp=sharing) for his data publication.
+
+### Additional Metadata
+- More comprehensive metadata for MAC Seasons 4 and 6 include germplasms, methods, and variables, and can also be found in the same Google [drive](https://drive.google.com/drive/folders/16ZJcvwHV96_20BuuhhhnlCYF_mnkSjSl?usp=sharing).
+- The cultivar lookup [table](https://github.com/MagicMilly/for-data-publication/blob/main/data/processed/cultivar_lookup_table_2020-06-12T104808.csv) has a list of all cultivars from MAC Seasons 4 and 6, the KSU Experiment, and those described in the Brenton et al. 2016 [paper](https://www.genetics.org/content/204/1/21). 
+
 
 ### Raw Data
 The raw input trait data queried from betydb live on [CyVerse](https://cyverse.org/), in addition to environmental data downloaded from weather stations. All links will start an **automatic download** from CyVerse of the selected dataset. 
