@@ -12,9 +12,9 @@ def calculate_vpd(temp_avg, rh_avg):
     return vpd
 
 
-# def save_to_csv(list_of_dfs, list_of_output_filenames):
-#     for i,j in zip(list_of_dfs, list_of_output_filenames):
-#         i.to_csv(j, index=False)
+def save_to_csv(list_of_dfs, list_of_output_filenames):
+    for i,j in zip(list_of_dfs, list_of_output_filenames):
+        i.to_csv(j, index=False)
 
 
 s4_url = 'https://de.cyverse.org/dl/d/7D6C8FD6-EF77-437C-89E6-412EA8C3EEC6/mac_weather_station_raw_daily_2017.csv'
@@ -267,14 +267,8 @@ clemson_16 = clemson_15.copy()
 clemson_16[clemson_cols_to_round] = clemson_16[clemson_cols_to_round].round(2)
 
 
+list_of_dfs = [s4_11, s6_11, ksu_14, clemson_16]
+list_of_output_filenames = ['mac_season_4_weather.csv', 'mac_season_6_weather.csv', 'ksu_weather.csv', 'clemson_weather.csv']
 
-
-# Save weather data to .csv format
-
-
-# list_of_dfs = [s4_11, s6_11, ksu_14, clemson_16]
-# list_of_output_filenames = ['data/weather/mac_season_4_weather.csv', 'data/weather/mac_season_6_weather.csv',
-#                            'data/weather/ksu_weather.csv', 'data/weather/clemson_weather.csv']
-
-# save_to_csv(list_of_dfs, list_of_output_filenames)
+save_to_csv(list_of_dfs, list_of_output_filenames)
 
